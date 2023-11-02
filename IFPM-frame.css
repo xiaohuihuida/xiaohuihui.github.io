@@ -1,0 +1,69 @@
+/*--DKLN-V1.3.2-IFPM--*/
+/*Obsidian-normal*/
+table {
+  margin: auto; /*基础表格居中*/
+}
+
+/*IFPM-Zotero*/
+div span.highlight {
+  color: black; /*批注高亮内文本黑色*/
+}
+
+/*IFPM-DV*/
+ifpm ~ select,
+ifpm ~ input /*metaedit*/ {
+  color: darkcyan;
+  width: 15em;
+}
+
+ifpm ~ div thead th /*表头居中*/ {
+  text-align: center;
+}
+
+ifpm ~ div thead span.small-text /*5.0表头序列*/ {
+  display: none;
+}
+
+ifpm ~ div tbody td span /*表内文本*/ {
+  display: block;
+}
+
+ifpm ~ div tbody td span a.tag /*表内文本*/ {
+  display: inline-block;
+}
+
+ifpm.dvcards ~ div thead th:nth-child(1)/*列宽限制*/ {
+  width: 10em;
+}
+
+ifpm.dvcards ~ div tbody td /*cards靠上*/ {
+  vertical-align: top;
+}
+
+ifpm.dvcards ~ div tbody li /*表内列表样式*/ {
+  display: block;
+}
+
+ifpm ~ div table,
+ifpm ~ div table.table-view-table td /*表内框线*/ {
+  border-collapse: collapse;
+  border-width: 1px;
+  border-style: solid;
+  border-color: darkslategrey;
+}
+
+ifpm ~ center.exportButton a {
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: subpixel-antialiased;
+  box-sizing: border-box;
+  color: var(--text-normal);
+  background-color: var(--interactive-normal);
+  border-radius: 4px;
+  border: none;
+  padding: 6px 20px;
+  cursor: var(--cursor);
+  margin-right: 12px;
+  font-family: inherit;
+  outline: none;
+  white-space: nowrap;
+}
